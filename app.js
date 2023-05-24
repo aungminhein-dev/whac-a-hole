@@ -2,7 +2,7 @@ const squares = document.querySelectorAll('.square')
 const mole = document.querySelector('.mole')
 const timeLeft = document.getElementById('time-left')
 const score =document.getElementById('score')
-let allowedTime = 10
+let allowedTime = 60
 let result = 0
 let hitPosition
 
@@ -37,7 +37,7 @@ const countDown = () => {
    timeLeft.innerHTML = allowedTime
    if(allowedTime == 0){
     clearInterval(countDownTimer)
-    alert('Game Over! Final Score is '+result)
+    alert('Game Over! Final Score is '+result+'Please refresh the page if u wanna play again!')
    }
 
        
